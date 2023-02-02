@@ -3,22 +3,46 @@
     margin: 0;
     outline: 0;
   }
-  /* body{
-    
-  } */
+  body{
+    overflow: hidden;
+  }
  .navbar{
     background: #1e1f26;
     height: 65px;
+    padding: 0 40px;
+    padding-bottom: 10px;
   }
-  .navbar > h1 > {
+  ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* position:absolute; */
+  }
+  li{
+    display: inline-block;
+    padding: 20px 30px;
+  }
+  .logo{
+    margin-left: 100px;
+
+  }
+  .page{
+    display: float;
+    float: right;
+  }
+
+ a{
+    text-decoration: none;
     padding: 0;
     text-align: center;
     color: #fff;
-    font-weight: 700;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin-left: 150px; */
     font-size: 25px;
     line-height: 35px;
     font-family: 'IBM Plex Sans', sens-serif;
@@ -30,4 +54,113 @@
     background-position: center;
     background-repeat: no-repeat; 
     height:100vh;
+  }
+  #body{
+    background-color: black;
+    opacity: 0.9;
+  }
+  #body .leaderboard {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #body .leaderboard .title {
+    color: #A3A3A3;
+    font-family: audiowide-regular-webfont;
+    font-size: 34px;
+    line-height: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  
+  #body .leaderboard .table {
+    color: #A3A3A3;
+    font-size: 20px;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+  }
+  
+  #body .leaderboard .table th {
+    font-size: 30px;
+    text-align: left;
+    font-family: audiowide-regular-webfont;
+    padding: 30px;
+  }
+  
+  #body .leaderboard .table td{
+    padding: 10px 30px 10px;
+  }
+  
+  #body .leaderboard .table td:nth-child(1){
+    min-width: 400px;
+  }
+  
+  #body .leaderboard .table td:nth-child(2){
+    text-align: center;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  
+  table, td, th {
+    border: 2px solid white;
+    border-collapse: collapse;
+  }
+  .bird{
+    position:absolute;
+    top: 1%;
+    right: 1%;
+    scale: 50%;
+    animation: MoveUpDown 2s linear infinite;
+  }
+  .bird2{
+    position:absolute;
+    top: -34%;
+    left: 33%;
+    scale: 45%;
+    animation: MoveUpDown 2s linear infinite;
+  } .bird3{
+    position:absolute;
+    top: -33%;
+    left: -20%;
+    scale:50%;
+    
+    animation: MoveUpDown 2s linear infinite;
+  } .bird4{
+    position:absolute;
+    top: 0.1%;
+    left: 30%;
+    scale: 50%;
+    animation: MoveUpDown 2s linear infinite;
+  }
+
+ .boat{
+  position:absolute;
+  top: -12%;
+  left:-20%;
+  scale: 50%;
+  animation: Bouyancy 4s linear infinite;
+}
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-60px);
+    }
+  }
+
+  @keyframes Bouyancy {
+    0%, 100% {
+      transform: rotate(-0.5deg);
+    }
+    50% {
+      transform: rotate(0.5deg);
+    }
   }
