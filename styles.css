@@ -9,13 +9,12 @@
  .navbar{
     background: #1e1f26;
     height: 65px;
-    padding: 0 40px;
+    /* padding-left:100px; */
     padding-bottom: 10px;
   }
   ul{
     display: inline-block;
     list-style: none;
-    padding: 0;
     margin: 0;
     width: 100%;
     /* position:absolute; */
@@ -25,12 +24,17 @@
     padding: 20px 30px;
   }
   .logo{
-    margin-left: 100px;
-
+    padding-left: 575px;
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
   }
   .page{
     display: float;
     float: right;
+    padding-left: 50px;
   }
 
  a{
@@ -165,3 +169,31 @@
       transform: rotate(0.5deg);
     }
   }
+  .maze {
+    border: 20px #111411 solid;
+    background-image: url("/assets/maze.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    box-sizing:border-box;
+}
+
+.charctr {
+    position:absolute;
+    top: 42%;
+    left: 60%;
+    scale: 15%;
+    animation: Breathe 4s linear infinite;
+}
+
+@keyframes Breathe {
+    0%, 100% {
+      transform: rotate(-0.5deg);
+    }
+    50% {
+      transform: rotate(0.5deg);
+    }
+  }
+
