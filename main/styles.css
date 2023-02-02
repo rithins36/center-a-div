@@ -3,11 +3,14 @@
     margin: 0;
     outline: 0;
   }
-  header#header {
+  /* body{
+    
+  } */
+ .navbar{
     background: #1e1f26;
     height: 65px;
   }
-  header#header > h1 {
+  .navbar > h1 > {
     padding: 0;
     text-align: center;
     color: #fff;
@@ -19,4 +22,12 @@
     font-size: 25px;
     line-height: 35px;
     font-family: 'IBM Plex Sans', sens-serif;
+  }
+  .content{
+    width: 100%;
+    background-image: url(/assets/river-hill-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height:100vh;
   }
