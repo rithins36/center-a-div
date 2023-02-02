@@ -54,6 +54,7 @@
     background-position: center;
     background-repeat: no-repeat; 
     height:100vh;
+    position: absolute;
   }
   #body{
     background-color: black;
@@ -140,8 +141,8 @@
   }
 
  .boat{
-  position:absolute;
-  top: -12%;
+  position:relative;
+  bottom: 100px;
   left:-20%;
   scale: 50%;
   animation: Bouyancy 4s linear infinite;
